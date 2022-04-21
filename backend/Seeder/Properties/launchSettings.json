@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Seeder": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production" // Production Development
+      }
+    }
+  }
+}

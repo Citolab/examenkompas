@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* anonymous-pro-regular - latin */
+@font-face {
+  font-family: 'Anonymous';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('assets/fonts/anonymous/anonymous-pro-v14-latin-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('assets/fonts/anonymous/anonymous-pro-v14-latin-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('assets/fonts/poppins/poppins-v15-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('assets/fonts/poppins/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@layer components {
+  .footer .link {
+    @apply text-primary font-semibold hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+/*
+.page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1563.361' height='1323.646' viewBox='0 0 1563.361 1323.646'%3E%3Crect id='Rectangle_1440' data-name='Rectangle 1440' width='512' height='224' rx='64' transform='translate(0 805.754) rotate(-45)' fill='%23f86d70' opacity='0.097'/%3E%3Crect id='Rectangle_1438' data-name='Rectangle 1438' width='512' height='224' rx='64' transform='translate(786.931 446.254) rotate(-45)' fill='%23f86d70' opacity='0.097'/%3E%3Crect id='Rectangle_1439' data-name='Rectangle 1439' width='512' height='224' rx='64' transform='translate(1042.931 362.039) rotate(-45)' fill='%23f86d70' opacity='0.097'/%3E%3Crect id='Rectangle_1441' data-name='Rectangle 1441' width='512' height='224' rx='64' transform='translate(922.931 1165.254) rotate(-45)' fill='%23f86d70' opacity='0.097'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+}*/
+
+.wikiwijslink a {
+  color: #84389a;
+  text-decoration: none;
+  border-bottom: 2px;
+  padding-bottom: 0.2rem;
+  text-underline-position: under;
+
+  border-bottom: 1px solid #85389a2d;
+  &:hover {
+    border-bottom: 1px solid #84389a;
+  }
+}
+
+.wikicolor {
+  color: #84389a;
+}
+
+.onvolledig {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 5px,
+    #f0f0f0 5px,
+    #f0f0f0 10px
+  );
+}

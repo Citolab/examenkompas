@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "data": "libs/data",
+    "examenkompas": "apps/examenkompas",
+    "ui": "libs/ui"
+  }
+}
